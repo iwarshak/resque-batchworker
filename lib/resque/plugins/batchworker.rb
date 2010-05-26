@@ -11,7 +11,7 @@ module Resque
         prune_dead_workers
         register_worker
       
-        @logger = Logger.new("forked_worker.log")
+        @logger = Logger.new("batchworker.log")
         @logger.debug("about to start a forked worker with count #{worker_number}")
         @logger.debug("inside safe_fork #{Process.pid}")
         job_counter = 0
