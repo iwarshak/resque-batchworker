@@ -15,6 +15,10 @@ throughout the day but ONLY wanted them to be processed during off-peak hours
 To use Batchworker, run this: 
   require 'resque/plugins/batchworker'
   Resque::Plugins::Batchworker.initiate_work NUMBER_OF_PROCESSES, QUEUE_NAME
+  
+
+Thanks to Facilities Technology Group for allowing this code to be released
+publicly.
 
 == Note on Patches/Pull Requests
  
