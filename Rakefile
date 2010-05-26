@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "resque-batchworker"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Resque plugin for batch processing of jobs}
+    gem.description = %Q{Forks X children, processes all jobs in the queue and all processes quit when there are no more jobs to complete}
     gem.email = "iwarshak@stripey.net"
     gem.homepage = "http://github.com/iwarshak/resque-batchworker"
     gem.authors = ["Ian Warshak"]

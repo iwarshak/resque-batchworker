@@ -1,6 +1,19 @@
 = resque-batchworker
 
-Description goes here.
+Works with Resque 1.8.5
+
+Resque::Plugins::Batchworker is an alternative to the standard Worker class. 
+
+This class works by forking X children, which all work until there are no more jobs
+to run, and then all of the children quit. Note that the traditional Worker
+will fork for every single job. This class will not do that. Keep that in mind.
+
+This was written for a situation where hundreds of thousands of jobs get queued
+throughout the day but ONLY wanted them to be processed during off-peak hours
+(i.e. middle of the night)
+
+To use Batchworker, run this: 
+  Resque::Plugins::Batchworker.initiate_work NUMBER_OF_PROCESSES, QUEUE_NAME
 
 == Note on Patches/Pull Requests
  
