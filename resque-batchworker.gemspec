@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "lib/resque-batchworker.rb",
      "lib/resque/plugins/batchworker.rb",
      "lib/resque/plugins/safe_fork.rb",
+     "resque-batchworker.gemspec",
      "test/helper.rb",
      "test/test_resque-batchworker.rb"
   ]
